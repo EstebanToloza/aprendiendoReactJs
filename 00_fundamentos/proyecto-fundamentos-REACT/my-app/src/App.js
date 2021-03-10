@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Parrafo from './components/Parrafo.jsx'
+import Variables from './components/Variables.jsx';
 
 //importando componente en react
 function App() {
@@ -7,9 +9,7 @@ function App() {
     <div className="App">
       <h1>Hola mundo React</h1>
       <Parrafo /> 
-      <Parrafo /> 
-      <Parrafo /> 
-      <Parrafo /> 
+      <Variables />
     </div>
   );
 }
