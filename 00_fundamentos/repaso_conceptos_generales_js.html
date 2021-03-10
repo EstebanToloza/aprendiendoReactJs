@@ -41,11 +41,39 @@
         .then(data => {
             //console.log(data.results)
             data.results.forEach(element => {
-                console.log(element.name)
+                //console.log(element.name)
             });
         })
         .catch(err => console.log(err))
-        
+    
+    //Async / await - map - filter
+    
+    const obtenerPokemones = async() => {
+        try {
+            const res = await fetch("https://pokeapi.co/api/v2/pokemon/")
+            const data = await res.json()
+            //console.log(data.results)
+            
+            /* data.results.forEach(element => {
+                console.log(element.name)
+            }); */
+
+           /* const arrayNombres = data.results.map(poke => poke.url)
+           console.log(arrayNombres) */
+
+           //arrayNombres = data.results.filter(poke => poke.name === "bulbasaur")
+           arrayNombres = data.results.filter(poke => poke.name !== "ivysaur")
+
+           console.log(arrayNombres)
+
+        } catch (err) {
+            console.log(err)
+        }
+    }
+    obtenerPokemones()
+
+    //map
+
 
     </script>
 </body>
