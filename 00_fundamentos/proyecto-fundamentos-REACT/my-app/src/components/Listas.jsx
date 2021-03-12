@@ -9,16 +9,39 @@ const Listas = () => {
     ]
     const [lista, setLista] = useState(estadoInicial)
 
+    const agregarElemento = () => {
+        console.log('click')
+        setLista([
+            ...lista,
+            {id: 4, texto: 'tarea 4'},
+        ])
+    }
+
     return (
         <div>
             <h2>Listas</h2>
             {
                 lista.map( (item, index) => (
-                    <h4 key={item.id}>{item.texto}</h4>
+                    <h4 key={index}>{item.texto}</h4>
                 ))
             }
+
+            <button onClick={() => agregarElemento()} >Agregar</button>
         </div>
     )
+
+    
 }
 
 export default Listas
+
+
+/* ************************************************************* */
+
+    /* Operador de propagación */
+    const arrayUno = ['Chile', 'Argentina']
+    const arrayDos = ['Perú', 'Mexico']
+
+    const Unidos = [...arrayUno, ...arrayDos]
+    console.log(Unidos)
+
