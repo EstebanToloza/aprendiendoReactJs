@@ -4,6 +4,7 @@ const Formulario = () => {
 
     const [fruta, setFruta] = React.useState('')
     const [descripcion, setDescripcion] = React.useState('')
+    const [lista, setLista] = React.useState([])
 
     const guardarDatos = (e) =>{
         e.preventDefault()
@@ -18,6 +19,11 @@ const Formulario = () => {
         }
 
         console.log('procesando datos...' + fruta + descripcion)
+
+        setLista([
+            ...lista,
+            {nombrefruta: fruta, nombreDescripcion: descripcion}
+        ])
 
         e.target.reset()
         setFruta('')
@@ -43,6 +49,15 @@ const Formulario = () => {
                 />
                 <button className="btn btn-primary btn-block" type="submit">Agregar</button>
             </form>
+            <ul>
+                {
+                    lista.map((item, index) => (
+                        <li key={index}>
+                            {item.nombrefruta} - {item.nombreDescripcion}
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
     )
 }
