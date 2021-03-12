@@ -13,6 +13,11 @@ const Contador = () => {
         <div>
             <h2>Contador</h2>
             <h3>Nuestro número aumentado: { contador } </h3>
+            <h4>
+                {
+                    contador > 2 ? 'Es mayor a 2' : 'Es menor a 2' /* Estructura del operador ternario, """evaluacion ? exito : negativa """ */
+                } 
+            </h4>
             <button onClick= {() => aumentar()} >Aumentar</button>
         </div>
     )
