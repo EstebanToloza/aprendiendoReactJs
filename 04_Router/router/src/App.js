@@ -6,6 +6,7 @@ import {
   Link,
   NavLink
 } from "react-router-dom";
+import Civilization from './components/Civilization';
 import Contacto from './components/Contacto';
 import Inicio from './components/Inicio';
 import Nosotros from './components/Nosotros';
@@ -30,6 +31,9 @@ function App() {
       {/* <Route path="/" exact> //Se debe organizar las rutas de lo más específico a lo más general o usar 'exact'
           Esta es la página de Inicio
         </Route> */}
+        <Route path="/nosotros/:id">
+          <Civilization />
+        </Route>
         <Route path="/contacto">
           <Contacto />
         </Route>
