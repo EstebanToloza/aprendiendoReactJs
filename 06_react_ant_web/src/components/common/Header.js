@@ -8,7 +8,7 @@ function AppHeader(){
         <div className="container-fluid">
             <div className="header">
             <div className="logo">
-                <i class="fas fa-bolt"></i>
+                <i className="fas fa-bolt"></i>
                 <a href="#">Tech</a>
             </div>
                 <Menu mode="horizontal" defaultSelectedKeys={['home']}>

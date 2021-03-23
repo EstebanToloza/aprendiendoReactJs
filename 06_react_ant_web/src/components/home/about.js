@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Row, Col } from 'antd';
 
 const items = [
@@ -27,7 +26,7 @@ function AppAbout() {
     return (
         <div className="block aboutBlock">
             <div className="container-fluid">
-                <div className="tittleHolder">
+                <div className="titleHolder">
                     <h2>About Us</h2>
                     <p>dolor sit amet, consectetur adipisicing elit</p>
                 </div>
