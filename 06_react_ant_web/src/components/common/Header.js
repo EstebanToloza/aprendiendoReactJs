@@ -1,6 +1,6 @@
 import React from 'react';
-import App from '../../App';
-import { Menu } from 'antd';
+/* import App from '../../App';
+ */import { Menu } from 'antd';
 
 
 function AppHeader(){
