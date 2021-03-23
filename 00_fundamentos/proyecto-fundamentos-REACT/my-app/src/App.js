@@ -4,8 +4,8 @@ import React from 'react';
 import Variables from './components/Variables.jsx';
 import Eventos from './components/Eventos.jsx';
 import Contador from './components/Contador.jsx'; */
-/* import Listas from './components/Listas.jsx';
- */import Formulario from './components/Formulario.jsx';
+import Listas from './components/Listas.jsx';
+import Formulario from './components/Formulario.jsx';
 
 
 //importando componente en react
@@ -16,8 +16,8 @@ function App() {
       {/* <Parrafo /> 
       <Variables />
       <Eventos />
-      <Contador />
-      <Listas /> */}
+      <Contador />*/}
+      <Listas /> 
       <Formulario />
     </div>
   );
