@@ -1,11 +1,13 @@
 import React from 'react'
+import Parrafo from '../Parrafo'
+import Title from '../Title'
 
 const Blog = () => {
     return (
-        <section>
-            <h1>Titulo</h1>
-            <p>dansudnas nduansduasnudas dansudnausdas</p>
-        </section>
+        <>
+            <Title />
+            <Parrafo />
+        </>
     )
 }
 
