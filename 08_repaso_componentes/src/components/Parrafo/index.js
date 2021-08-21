@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Parrafo = () => {
+const Parrafo = ({ content }) => {
     return (
-        <p>Soy un párrafo de prueba</p>
+        <p>{content}</p>
     )
 }
 

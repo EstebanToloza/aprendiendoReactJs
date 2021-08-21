@@ -22,9 +22,18 @@ function App() {
   return (
     <div className="App">
       <span>El valor del estado message es: {message}</span>
+      <br/>
       <span>El valor del contador es: {counter}</span>
+      <br/>
       <button onClick={handleCounter}>+1</button>
-      <Blog />
+      <Blog 
+        title="Éste sería el title" 
+        content="Éste sería el contenido"
+      />
+      <Blog 
+        title="Otro título" 
+        content="Otro contenido"
+      />
       <button onClick={handleClick}>Click me!</button>
       <label>Mensaje</label>
       <input type="text" name="name" onChange={handleChange} />

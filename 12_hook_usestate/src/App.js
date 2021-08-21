@@ -13,6 +13,7 @@ function App() {
       const dataToJson = await getData.json()
 
       setUser(dataToJson);
+      console.log(dataToJson)
   }
 
   return (
