@@ -12,6 +12,7 @@ describe('Pruebas en 02-template-string', () => {
         expect( saludo ).toBe('Hola ' + nombre); 
     })    
 
+    // getSaludo debe retornar 'Hola Carlos' si no hay argumento en nombre
     test('getSaludo debe retornar hola + Carlos si no hay argumento', () => {
         
         const saludo = getSaludo();
@@ -20,7 +21,6 @@ describe('Pruebas en 02-template-string', () => {
     })    
 });
 
-// getSaludo debe retornar 'Hola Carlos' si no hay argumento en nombre
 
     
 
