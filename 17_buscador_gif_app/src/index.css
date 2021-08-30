@@ -11,3 +11,28 @@ input {
   font-size: 1.2rem;
   color: gray;
 }
+
+.card {
+  align-content: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card p {
+  padding: 5px;
+  text-align: center;
+}
+
+.card img {
+  max-height: 170px;
+  display: flex;
+  margin: auto;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

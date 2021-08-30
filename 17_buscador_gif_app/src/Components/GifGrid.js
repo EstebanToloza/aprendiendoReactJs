@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import GifGridItem from './GifGridItem'
 
 const GifGrid = ({ category }) => {
+
+    const [images, setImages] = useState([])
+
+    useEffect(() => {
+        getGifs()
+    }, [])
 
     const getGifs = async() => {
         const url = 'https://api.giphy.com/v1/gifs/search?q=Batman&limit=10&api_key=WxoNKH0uI8Z4Pf4jxL6f44TTJ1VMotGU'
@@ -16,14 +23,24 @@ const GifGrid = ({ category }) => {
         })
 
         console.log(gifs)
+        setImages(gifs)
     }
 
-    getGifs()
 
     return (
-        <div>
+        <>
             <h3>{category}</h3>
-        </div>
+            <div className="card-grid">
+                {
+                    images.map( img => (
+                        <GifGridItem 
+                            key={img.id}
+                            {...img}
+                        />
+                    ))
+                }
+            </div>
+        </>
     )
 }
 
