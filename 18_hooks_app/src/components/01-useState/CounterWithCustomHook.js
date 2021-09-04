@@ -14,8 +14,8 @@ const CounterWithCustomHook = () => {
             <h1>Counter with Hook {state}</h1>
             <hr />
 
-            <button onClick={() => increment(2)} className="btn btn-primary">+ 1</button>
-            <button onClick={() => decrement(2)} className="btn btn-warning ms-3">- 1</button>
+            <button onClick={() => increment()} className="btn btn-primary">+ 1</button>
+            <button onClick={() => decrement()} className="btn btn-warning ms-3">- 1</button>
             <button onClick={reset} className="btn btn-danger ms-3">Reset</button>
 
             {/* <button onClick={() => setstate(100)} className="btn btn-danger ms-3">Reset</button> */}
