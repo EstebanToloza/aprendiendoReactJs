@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Layout from './components/05-useLayoutEffect/Layout';
+import Memorize from './components/06-memo/Memorize';
 import './style.css'
+//import Layout from './components/05-useLayoutEffect/Layout';
 //import RealExampeRef from './components/04-useRef/RealExampeRef';
 //import FocusScreen from './components/04-useRef/FocusScreen';
 //import MultipleCustomHooks from './components/03-examples/MultipleCustomHooks';
@@ -15,7 +16,7 @@ import './style.css'
 
 ReactDOM.render(
   
-    <Layout />,  
+    <Memorize />,  
 
   document.getElementById('root')
 );
