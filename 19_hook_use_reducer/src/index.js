@@ -1,7 +1,7 @@
- import React from 'react';
- import ReactDOM from 'react-dom';
- import TodoApp from './components/08-useReducer/TodoApp';
- import './style.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import TodoApp from './components/08-useReducer/TodoApp';
+import './style.css';
 //  import { Padre } from './components/07-tarea-memo/Padre';
 //  import CallbackHook from './components/06-memo/CallbackHook';
 //  import MemoHook from './components/06-memo/MemoHook';
@@ -15,6 +15,7 @@
 //  import CounterWithCustomHook from './components/01-useState/CounterWithCustomHook'
 //  import CounterApp from './components/01-useState/CounterApp';
 //  import HookApp from './HookApp';
+//  import './components/08-useReducer/intro-reducer';
 
  ReactDOM.render(
   
@@ -22,5 +23,3 @@
 
    document.getElementById('root')
  );
-
-//import './components/08-useReducer/intro-reducer';
