@@ -1,8 +1,16 @@
 import { useState } from "react"
 
+/* Custom hook. Recibe un objeto con las propiedades a manipular,
+el handleInputChange se ocupa de leer y setear los nuevos valores que se le van dando a
+dichas propiedades */
+
 const useForm = ( initialState = {} ) => {
    
     const [values, setValues] = useState(initialState)
+
+    const reset = () => {
+        setValues(initialState)
+    }
 
     const handleInputChange = ({ target }) => {
 
@@ -12,7 +20,7 @@ const useForm = ( initialState = {} ) => {
         });
     }
 
-    return [ values, handleInputChange ]
+    return [ values, handleInputChange, reset ]
 
 }
 
