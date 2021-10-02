@@ -5,7 +5,6 @@ import {
   } from "react-router-dom";
 import { AuthContext } from '../auth/AuthContext';
 import LoginScreen from '../components/login/LoginScreen';
-import { Navbar } from '../components/ui/Navbar';
 import DashboardRoutes from './DashboardRoutes';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
