@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Heading from './components/Heading';
 import TaskList from './components/TaskList';
 import TaskForm from './components/TaskForm';
+import { ContextProvider } from './context/GlobalContext';
 
 function App() {
   return (

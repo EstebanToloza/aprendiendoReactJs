@@ -16,3 +16,9 @@ export const GlobalContext = createContext({
         }
     ]
 })
+
+export const ContextProvider = ({ children }) => {
+    <div>
+        {children}
+    </div>
+}
